@@ -1,44 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oskar Zielinski — Test Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oskar Zielinski — Silicon &amp; Hardware Engineer</title>
+<meta name="description" content="Oskar Zielinski — MSc Microelectronics and Systems Design. RTL, FPGA, CMOS layout, and semiconductor device research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background: #f7f7f7; color: #111;">
+<body>
 
-  <h1>GitHub Pages Test Page</h1>
+<div class="noise-guard"></div>
 
-  <p>
-    If you can see this page, GitHub Pages is serving the latest
-    <code>index.html</code>.
-  </p>
+<header class="topbar">
+  <a href="#top" class="topbar__mark">OZ</a>
+  <nav class="topbar__nav">
+    <a href="#experience">experience</a>
+    <a href="#projects">projects</a>
+    <a href="#research">research</a>
+    <a href="#skills">skills</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <a href="assets/oskar-zielinski-cv.pdf" class="topbar__cv" download>
+    <span>download cv</span>
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1V8M6 8L3 5M6 8L9 5M1.5 10.5H10.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</header>
 
-  <p>
-    <strong>Test marker:</strong> version 3 — simple HTML only.
-  </p>
+<main id="top">
 
-  <hr>
+  <section class="hero">
+    <p class="hero__eyebrow">module oskar_zielinski (</p>
+    <h1 class="hero__name">Oskar<br>Zielinski</h1>
+    <div class="hero__trace" aria-hidden="true">
+      <svg viewBox="0 0 600 60" preserveAspectRatio="none">
+        <path id="clockTrace" d="M0,30 L60,30 L60,10 L120,10 L120,50 L180,50 L180,10 L240,10 L240,50 L300,50 L300,10 L360,10 L360,50 L420,50 L420,10 L480,10 L480,30 L600,30" fill="none" stroke="#0F6E56" stroke-width="2"/>
+      </svg>
+    </div>
+    <p class="hero__role">MSc Microelectronics &amp; Systems Design — University of Southampton</p>
+    <p class="hero__blurb">Working across RTL design, FPGA validation, CMOS layout, and semiconductor
+      device characterisation. Currently researching memristive chalcogenide materials for
+      next-generation memory and neuromorphic hardware, alongside a background in
+      SystemVerilog, computer architecture, and embedded systems.</p>
+    <div class="hero__links">
+      <a href="mailto:oskarmzielinski@gmail.com">oskarmzielinski@gmail.com</a>
+      <span class="dot">·</span>
+      <a href="tel:07900014084">079000 14084</a>
+      <span class="dot">·</span>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin</a>
+    </div>
+    <p class="hero__close">);</p>
+  </section>
 
-  <h2>Oskar Zielinski</h2>
+  <section class="section" id="education">
+    <div class="section__head">
+      <p class="section__eyebrow">// education</p>
+      <h2>Education</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline__row">
+        <p class="timeline__date">2025 — 2026</p>
+        <div class="timeline__body">
+          <h3>MSc Microelectronics and Systems Design</h3>
+          <p class="timeline__place">University of Southampton</p>
+          <p class="timeline__detail">Digital Systems Design · VLSI Systems Design · VLSI Design Project ·
+            Embedded Processors · Digital Systems Synthesis</p>
+        </div>
+      </div>
+      <div class="timeline__row">
+        <p class="timeline__date">2021 — 2025</p>
+        <div class="timeline__body">
+          <h3>BEng Electrical and Electronic Engineering <span class="tag tag--digital">first class</span></h3>
+          <p class="timeline__place">Liverpool John Moores University</p>
+          <p class="timeline__detail">Further Electronic Design · Engineering Project · Engineering Management ·
+            Embedded Systems Programming</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p>
-    MSc Microelectronics and Systems Design student interested in RTL design,
-    FPGA validation, CMOS layout, and semiconductor device characterisation.
-  </p>
+  <section class="section" id="experience">
+    <div class="section__head">
+      <p class="section__eyebrow">// experience</p>
+      <h2>Work experience</h2>
+    </div>
+    <div class="card">
+      <div class="card__head">
+        <h3>CE&amp;I Design Engineer Placement</h3>
+        <p class="card__date">Jun 2023 — Sep 2024</p>
+      </div>
+      <p class="card__place">Sellafield Ltd</p>
+      <ul class="card__list">
+        <li>Updated and maintained CE&amp;I drawing packs in AutoCAD — schematics, wiring, panel layouts —
+          implementing approved redline markups into controlled revisions.</li>
+        <li>Interpreted electrical schematics and connection diagrams to support equipment replacement,
+          ensuring compatibility of like-for-like COTS component substitution.</li>
+        <li>Authored a site-wide internal document on cybersecurity safety considerations, summarising
+          threats and controls aligned with site engineering practices.</li>
+        <li>Designed an electrical panel enclosure for a building egress/ingress system — defined I/O and
+          power needs, selected components, produced drawings and interface documentation.</li>
+        <li>Coordinated with design leads, SMEs, and other disciplines to progress drawing and document
+          approvals.</li>
+      </ul>
+    </div>
+  </section>
 
-  <ul>
-    <li>SystemVerilog</li>
-    <li>FPGA validation</li>
-    <li>CMOS layout</li>
-    <li>Python</li>
-    <li>Semiconductor devices</li>
-  </ul>
+  <section class="section section--featured" id="research">
+    <div class="section__head">
+      <p class="section__eyebrow section__eyebrow--materials">// current research</p>
+      <h2>Dissertation — IV Characterisation of Memristive Chalcogenides</h2>
+    </div>
+    <div class="card card--featured">
+      <div class="card__head">
+        <h3>Sb₂Se₃ Memristive Device Characterisation</h3>
+        <p class="card__date">MSc Dissertation · in progress</p>
+      </div>
+      <p class="card__place">University of Southampton</p>
+      <p class="card__lede">Investigating current-voltage behaviour of antimony selenide (Sb₂Se₃)
+        thin-film devices, framed against the von Neumann memory wall problem, with off-stoichiometry
+        variation used to probe the link between point defects, trap states, and resistive switching
+        hysteresis.</p>
+      <ul class="card__list">
+        <li>Designed and executed IV characterisation experiments across stoichiometric variants of
+          Sb₂Se₃, distinguishing off-stoichiometry effects from elemental substitution.</li>
+        <li>Building a literature-grounded methodology connecting defect chemistry to switching behaviour,
+          spanning non-volatile memory, neuromorphic/synaptic, and optoelectronic application profiles.</li>
+        <li>Evaluating candidate chalcogenide systems (Sb₂S₃, Sb₂Te₃, GeSe, GST, Bi₂Se₃, and the
+          Sb₂(S,Se)₃ alloy system) for relevance to the memristive switching mechanism under study.</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag tag--materials">semiconductor devices</span>
+        <span class="tag tag--materials">neuromorphic computing</span>
+        <span class="tag tag--materials">thin-film characterisation</span>
+      </div>
+    </div>
+  </section>
 
-  <p>
-    Email:
-    <a href="mailto:oskarmzielinski@gmail.com">oskarmzielinski@gmail.com</a>
-  </p>
+  <section class="section" id="projects">
+    <div class="section__head">
+      <p class="section__eyebrow">// projects</p>
+      <h2>Projects</h2>
+    </div>
 
+    <div class="grid">
+
+      <article class="card">
+        <div class="card__head">
+          <h3>FFT Butterfly Processor</h3>
+        </div>
+        <p class="card__place">SystemVerilog / FPGA — individual project</p>
+        <ul class="card__list">
+          <li>Designed an 8-point FFT butterfly core from algorithmic specification through to RTL and
+            FPGA demonstration.</li>
+          <li>Performed manual scheduling and resource binding into a clocked controller/datapath
+            architecture with FSM and registered datapath.</li>
+          <li>Implemented signed fixed-point DSP arithmetic — 8-bit twiddle-factor encoding, 16-bit
+            intermediate multiplication, truncation back to 8-bit signed outputs.</li>
+          <li>Shared multiplier resources across sequential states to reduce hardware cost.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag--digital">SystemVerilog</span>
+          <span class="tag tag--digital">FPGA</span>
+          <span class="tag tag--digital">fixed-point DSP</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>Weather Station ASIC</h3>
+        </div>
+        <p class="card__place">SystemVerilog / FPGA — group project</p>
+        <ul class="card__list">
+          <li>Implemented control logic for a 16-character LCD interface, including initialisation,
+            command/data transfer, and busy-flag handshaking for an ST7066U-style display.</li>
+          <li>Formatted rainfall and wind-speed sensor data into LCD-ready character output.</li>
+          <li>Wrote testbenches verifying character writes, address handling, and reset behaviour;
+            traced an unexpected extra rain pulse to a button-synchronisation flip-flop issue.</li>
+          <li>Validated the full subsystem on Intel FPGA hardware.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag--digital">SystemVerilog</span>
+          <span class="tag tag--digital">testbenches</span>
+          <span class="tag tag--digital">FPGA validation</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>Application-Specific Embedded Processor</h3>
+        </div>
+        <p class="card__place">FPGA-based Gaussian smoothing</p>
+        <ul class="card__list">
+          <li>Designed a small 8-bit application-specific processor for Gaussian smoothing of signed
+            waveform samples.</li>
+          <li>Defined a minimal instruction/control sequence to poll inputs, read five ROM samples,
+            multiply-accumulate against fixed kernel coefficients, and drive LED output.</li>
+          <li>Verified in SystemVerilog testbenches, XCelium/SimVision simulation, Quartus synthesis
+            analysis, and on FPGA hardware.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag--digital">datapath design</span>
+          <span class="tag tag--digital">Quartus</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>8-Bit CPU</h3>
+        </div>
+        <p class="card__place">Undergraduate final year project</p>
+        <ul class="card__list">
+          <li>Designed and simulated a complete 8-bit Von-Neumann CPU in Logisim Evolution — ALU,
+            registers, FSM control, and control ROM driving a fixed fetch-decode-execute cycle.</li>
+          <li>Verified arithmetic, memory access, branching and conditional halting via single-step
+            simulation and DIP-switch stimulus.</li>
+          <li>Documented an expansion roadmap covering an assembler toolchain, interrupt/stack support,
+            and UART I/O.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag--digital">CPU architecture</span>
+          <span class="tag tag--digital">Logisim</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>Magic Transistor Design (TSMC 180nm)</h3>
+        </div>
+        <p class="card__place">Cell library project</p>
+        <ul class="card__list">
+          <li>Designed a full-adder and other minor cells in Magic using two metal layers, adhering to
+            DRC and enforcing I/O and height constraints for library integration.</li>
+          <li>Produced stick diagrams and transistor-level schematics from Boolean equations, iterating
+            layout to reduce area and interconnect length.</li>
+          <li>Ran parasitic extraction (ext2spice) and automated delay/capacitance sweeps across load
+            and slew corners, generating databook tables per input–output pair.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag--digital">CMOS layout</span>
+          <span class="tag tag--digital">DRC</span>
+          <span class="tag tag--digital">parasitic extraction</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>EMG-Controlled Rehabilitation System</h3>
+        </div>
+        <p class="card__place">Medical electronics group project</p>
+        <ul class="card__list">
+          <li>Contributed to a two-sensor forearm EMG system linking muscle activity acquisition to
+            robotic-hand actuation.</li>
+          <li>Worked on EMG preprocessing and decision logic — filtering, RMS feature extraction, and
+            threshold classification into gesture commands.</li>
+          <li>Helped integrate processed EMG output with a robotic hand via Python–Arduino serial
+            communication and servo control.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag--digital">Python</span>
+          <span class="tag tag--digital">signal processing</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>RC / Line Follower Vehicle</h3>
+        </div>
+        <ul class="card__list">
+          <li>Built an Arduino-based line follower using IR sensors with ultrasonic obstacle detection.</li>
+          <li>Implemented control logic to smooth steering and handle sensor dead zones.</li>
+          <li>Compared Bluetooth vs RF for a custom remote; selected RF for range, latency, and ease of
+            use.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag tag--digital">Arduino</span>
+          <span class="tag tag--digital">embedded control</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section__head">
+      <p class="section__eyebrow">// skills</p>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills">
+      <div class="skills__row">
+        <p class="skills__label">RTL / logical design</p>
+        <p class="skills__value">SystemVerilog, RTL development, FSM/datapath design, fixed-point
+          arithmetic, processor design</p>
+      </div>
+      <div class="skills__row">
+        <p class="skills__label">Verification / validation</p>
+        <p class="skills__value">Testbenches, simulation, waveform debugging, FPGA validation,
+          Xcelium/SimVision</p>
+      </div>
+      <div class="skills__row">
+        <p class="skills__label">Physical design</p>
+        <p class="skills__value">CMOS layout, standard-cell layout, DRC, parasitic extraction,
+          delay/capacitance characterisation</p>
+      </div>
+      <div class="skills__row">
+        <p class="skills__label">Tools / programming</p>
+        <p class="skills__value">Vivado, Quartus, Magic, Python, C++, Tcl</p>
+      </div>
+      <div class="skills__row">
+        <p class="skills__label">Workflow</p>
+        <p class="skills__value">Linux, CLI, VS Code, LaTeX, Microsoft Office</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact" id="contact">
+    <div class="section__head">
+      <p class="section__eyebrow">// contact</p>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact">
+      <a class="contact__item" href="mailto:oskarmzielinski@gmail.com">
+        <span class="contact__label">email</span>
+        <span class="contact__value">oskarmzielinski@gmail.com</span>
+      </a>
+      <a class="contact__item" href="tel:07900014084">
+        <span class="contact__label">phone</span>
+        <span class="contact__value">079000 14084</span>
+      </a>
+      <a class="contact__item" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+        <span class="contact__label">linkedin</span>
+        <span class="contact__value">/in/oskarzielinski</span>
+      </a>
+      <a class="contact__item" href="assets/oskar-zielinski-cv.pdf" download>
+        <span class="contact__label">cv</span>
+        <span class="contact__value">download pdf</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Oskar Zielinski — built with GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
